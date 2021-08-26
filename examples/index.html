@@ -1,0 +1,70 @@
+<!-- twitter / ig @cicciosgamino
+
+   _______           _                                  _
+  / ____(_)_________(_)___  _________ _____ _____ ___  (_)___  ____
+ / /   / / ___/ ___/ / __ \/ ___/ __ `/ __ `/ __ `__ \/ / __ \/ __ \
+/ /___/ / /__/ /__/ / /_/ (__  ) /_/ / /_/ / / / / / / / / / / /_/ /
+\____/_/\___/\___/_/\____/____/\__, /\__,_/_/ /_/ /_/_/_/ /_/\____/
+                              /____/
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="author" content="@cicciosgamino"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Openweather-APIs Element</title>
+
+  <style>
+    body  {
+      margin: 0;
+      font-family: Roboto, Helvetica, Arial, sans-serif;
+      padding: 2em;
+      text-align: center;
+    }
+
+    openweather-apis-element {
+
+      /* All Custom Vars
+      --switch-width: 160px;
+      --switch-height: 80px;
+      */
+    }
+  </style>
+  
+</head>
+
+<body>
+
+  <!-- coordinates 
+  <openweather-apis-element
+    apikey="889582b29bb3c80005cec85e7650ddb7"
+    lat="46.165453265078774"
+    lon="9.865204476923584">
+  </openweather-apis-element> -->
+
+  <openweather-apis-element
+    apikey="889582b29bb3c80005cec85e7650ddb7"
+    zip="24024"
+    country="IT">
+  </openweather-apis-element>
+
+  <noscript>
+    Please enable JavaScript to view this website.
+  </noscript>
+
+  <!-- Import Js Module -->
+  <script type="module" src="../openweather-apis-element.js"></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      const openweatherApi = document.querySelector('openweather-apis-element')
+      setTimeout(() => {
+        console.log(openweatherApi.smart)
+      }, 2000)
+    })
+  </script>
+</body>
+</html>

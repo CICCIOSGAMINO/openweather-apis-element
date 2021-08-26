@@ -1,0 +1,40 @@
+{
+  "name": "@cicciosgamino/openweather-apis-element",
+  "version": "1.0.0",
+  "description": "Simple Widget to get Data from OpenWeather service",
+  "main": "openweather-apis-element.js",
+  "type": "module",
+  "module": "openweather-apis-element.js",
+  "scripts": {
+    "serve": "web-dev-server --node-resolve --app-index examples/index.html --watch --open",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/CICCIOSGAMINO/openweather-apis-element/issues"
+  },
+  "homepage": "https://github.com/CICCIOSGAMINO/openweather-apis-element#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CICCIOSGAMINO/openweather-apis-element.git"
+  },
+  "keywords": [
+    "WebComponent",
+    "CustomElement",
+    "Lit",
+    "Weather",
+    "Weather Map",
+    "Openweather",
+    "Openweather-apis",
+    "Openweather-apis-element"
+  ],
+  "author": "@cicciosgamino <marco.canali@gmail.com>",
+  "license": "GPL-3.0",
+  "private": false,
+  "dependencies": {
+    "@cicciosgamino/openweather-apis": "^5.0.1",
+    "lit": "*"
+  },
+  "devDependencies": {
+    "@web/dev-server": "^0.1.22"
+  }
+}
